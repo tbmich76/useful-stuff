@@ -1,0 +1,6 @@
+D:\Code\other\TestDomeTest\TestDomeTest\bin\Debug\TestDomeTest.exe.config
+D:\Code\other\TestDomeTest\TestDomeTest\bin\Debug\TestDomeTest.exe
+D:\Code\other\TestDomeTest\TestDomeTest\bin\Debug\TestDomeTest.pdb
+D:\Code\other\TestDomeTest\TestDomeTest\obj\Debug\TestDomeTest.csprojResolveAssemblyReference.cache
+D:\Code\other\TestDomeTest\TestDomeTest\obj\Debug\TestDomeTest.exe
+D:\Code\other\TestDomeTest\TestDomeTest\obj\Debug\TestDomeTest.pdb
