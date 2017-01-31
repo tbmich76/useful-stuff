@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Gradients</title>
+<style>
+	body
+	{
+		margin: 0;
+		padding: 20px;
+		color: #000;
+		background: #fff;
+	}
+	.b
+	{
+		float: left;
+		width: 200px;
+		height: 200px;
+		margin: 0 20px 20px 0;
+		border-radius: 100px;
+		background-color: lime;
+	}
+	
+	.b1
+	{
+		background-image: -webkit-linear-gradient(0deg,#777 25px,lime 25px);
+		background-size: 50px 25px;
+	}
+	
+	.b2
+	{
+		background-image: -webkit-linear-gradient(45deg,#777 35px,lime 35px);
+		background-size: 50px 50px;
+	}
+	
+	.b3
+	{
+		background-image: -webkit-linear-gradient(
+			45deg,
+			#777 25px,lime 25px,
+			lime 50px, #777 50px,
+			#777 75px, lime 75px,
+			lime 100px, #777 100px,
+			#777 125px, lime 125px,
+			lime 150px, #777 150px,
+			#777 175px, lime 175px,
+			lime 200px, #777 200px,
+			#777 225px, lime 225px
+		);
+	}
+	
+	.b4
+	{
+		background: 
+		-webkit-radial-gradient(
+			left center,
+			circle cover,
+			#777 33px,lime 33px,
+			lime 37px, #777 37px
+			) repeat-x 0 0,
+		-webkit-radial-gradient(
+			right center,
+			circle cover,
+			#777 34px,lime 34px,
+			lime 38px, #777 38px
+			) repeat-x 0 50px,
+		-webkit-radial-gradient(
+			left center,
+			circle cover,
+			#777 33px,lime 33px,
+			lime 37px, #777 37px
+			) repeat-x 0 100px,
+		-webkit-radial-gradient(
+			right center,
+			circle cover,
+			#777 34px,lime 34px,
+			lime 38px, #777 38px
+			) repeat-x 0 150px;			
+		background-size: 50px 50px;
+	}
+</style>
+</head>
+<body>
+<div class="b b1"></div>
+<div class="b b2"></div>
+<div class="b b3"></div>
+<div class="b b4"></div>
+</body>
+</html>

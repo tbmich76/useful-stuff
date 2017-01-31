@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: [att|=val]</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/* example 1 */
+	p[class|="one"] { color: red; }
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: [att|=val] - hypen separated values
+	</h1>
+	<div class="example">
+		<h2>class="one"</h2>
+		<p class="one">
+			Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+		</p>
+	</div>
+	<div class="example">
+		<h2>class="two"</h2>
+		<p class="two">
+			Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+		</p>
+	</div>
+	<div class="example">
+		<h2>class="one two"</h2>
+		<p class="one two">
+			Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+		</p>
+	</div>
+	<div class="example">
+		<h2>class="one-two"</h2>
+		<p class="one-two">
+			Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+		</p>
+	</div>
+	<div class="example">
+		<h2>class="two-one"</h2>
+		<p class="two-one">
+			Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+		</p>
+	</div>
+</div>
+</body>
+</html>

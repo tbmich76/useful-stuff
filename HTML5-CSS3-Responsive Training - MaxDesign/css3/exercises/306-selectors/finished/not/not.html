@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: not</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/* example 1 */
+	.example1 :not(p) { color: red; }
+
+	/* example 2 */
+	.example2 :not(.foo) { color: red; }
+
+	/* example 3 */
+	.example3 :not(#bar) { color: red; }
+
+	/* example 4 */
+	.example4 :not(:lang(fr)) { color: red; }
+
+	/* example 5 */
+	.example5 input:not([required]) { border: 1px solid red; }
+
+	/* example 6 */
+	.example6 li:not(:first-child):not(:last-child) { color: red; }
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: not
+	</h1>
+	<h2>
+		Example 1 - style all elements except &lt;P&gt; elements
+	</h2>
+	<div class="example example1">
+		<p>This is a paragraph</p>
+		<div>This is a div</div>
+		<blockquote>This is a blockquote</blockquote>
+	</div>
+	
+	<h2>
+		Example 2 - style all elements except those elements with a class of "foo"
+	</h2>
+	<div class="example example2">
+		<p class="foo">This is a PARAGRAPH with a class of "foo"</p>
+		<div class="bar">This is a DIV with a class of "bar"</div>
+		<blockquote>This is a blockquote</blockquote>
+	</div>
+	
+	<h2>
+		Example 3 - style all elements except those elements with an ID of "bar"
+	</h2>
+	<div class="example example3">
+		<p id="foo">This is a PARAGRAPH with a ID of "foo"</p>
+		<div id="bar">This is a DIV with a ID of "bar"</div>
+		<blockquote>This is a BLOCKQUOTE</blockquote>
+	</div>
+	
+	<h2>
+		Example 4 - style all elements except those elements with a LANG of "fr"
+	</h2>
+	<div class="example example4">
+		<p lang="fr">This is a PARAGRAPH with a lang of "fr"</p>
+		<div lang="br">This is a DIV with a lang of "br"</div>
+	</div>
+	
+	<h2>
+		Example 5 - selecting all INPUT elements except those INPUT elements with a REQUIRED boolean attribute
+	</h2>
+	<form class="example example5" action="#" method="get">
+		<div>
+			<label for="l1">Email (required)</label>
+			<input id="11" name="11" type="text" required>
+		</div>
+		<div>
+			<label for="l2">Phone</label>
+			<input id="l2" name="12" type="text">
+		</div>
+		<div>
+			<label for="l3">Mobile</label>
+			<input id="l3" name="13" type="text">
+		</div>
+		<div>
+			<label for="l4">Address</label>
+			<input id="l4" name="14" type="text">
+		</div>
+	</form>
+	
+	<h2>
+		Example 6 - selecting all LI elements except for the first and last
+	</h2>
+	<ul class="example example6">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+	</ul>
+</div>
+</body>
+</html>

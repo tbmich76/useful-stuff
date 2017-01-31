@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: [attr]</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/* example 1 */
+	input[required] { border: 1px solid red; }
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: [attr] - attribute only
+	</h1>
+	<div class="example">
+		<form method="get" action="#">
+			<div>
+				<label for="name">Your name (required)</label>
+				<input name="name" id="name" type="text" required>
+			</div>
+			<div>
+				<label for="address">Your address</label>
+				<input name="address" id="address" type="text">
+			</div>
+			<div>
+				<label for="email">Your email (required)</label>
+				<input name="email" id="email" type="email" required>
+			</div>
+		</form>
+	</div>	
+</div>
+</body>
+</html>

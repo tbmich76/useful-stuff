@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise - radial-gradient</title>
+<style>
+	body
+	{
+		width: 40em;
+		margin: 1em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 120%/1.4 helvetica, arial, sans-serif;
+	}
+	
+	h2 { margin: 0; }
+	
+	div
+	{
+		width: 400px;
+		height: 250px;
+		border: 1px solid red;
+	}
+	
+	.small
+	{
+		float: left;
+		width: 160px;
+		height: 100px;
+		margin: 0 10px 10px 0;
+		padding: 10px;
+		border: 1px solid red;
+	}
+		
+	.clear { clear: left; }	/* example1 */
+	.example0
+	{
+		background-image: -webkit-radial-gradient(yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(yellow, white 50%, blue);
+	}
+	
+	.example1
+	{
+		background-image: -webkit-radial-gradient(left, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(left, yellow, white 50%, blue);
+	}
+	
+	.example2
+	{
+		background-image: -webkit-radial-gradient(right, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(right, yellow, white 50%, blue);
+	}
+	
+	.example3
+	{
+		background-image: -webkit-radial-gradient(top, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(top, yellow, white 50%, blue);
+	}
+	
+	.example4
+	{
+		background-image: -webkit-radial-gradient(bottom, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(bottom, yellow, white 50%, blue);
+	}
+	
+	.example5
+	{
+		background-image: -webkit-radial-gradient(left top, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(left top, yellow, white 50%, blue);
+	}
+	
+	.example6
+	{
+		background-image: -webkit-radial-gradient(left center, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(left center, yellow, white 50%, blue);
+	}
+	
+	.example7
+	{
+		background-image: -webkit-radial-gradient(left bottom, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(left bottom, yellow, white 50%, blue);
+	}
+	
+	.example8
+	{
+		background-image: -webkit-radial-gradient(center top, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(center top, yellow, white 50%, blue);
+	}
+	
+	.example9
+	{
+		background-image: -webkit-radial-gradient(center center, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(center center, white 50%, blue);
+	}
+	
+	.example10
+	{
+		background-image: -webkit-radial-gradient(center bottom, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(center bottom, yellow, white 50%, blue);
+	}
+	
+	.example11
+	{
+		background-image: -webkit-radial-gradient(right top, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(right top, yellow, white 50%, blue);
+	}
+	
+	.example12
+	{
+		background-image: -webkit-radial-gradient(right center, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(right center, yellow, white 50%, blue);
+	}
+	
+	.example13
+	{
+		background-image: -webkit-radial-gradient(right bottom, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(right bottom, yellow, white 50%, blue);
+	}
+	
+	.example14
+	{
+		background-image: -webkit-radial-gradient(20px 20px, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(20px 20px, yellow, white 50%, blue);
+	}
+	
+	.example15
+	{
+		background-image: -webkit-radial-gradient(60% 60%, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(60% 60%, yellow, white 50%, blue);
+	}
+	
+	.example16
+	{
+		background-image: -webkit-radial-gradient(center center, ellipse cover, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(center center, ellipse cover, yellow, white 50%, blue);
+	}
+	
+	.example17
+	{
+		background-image: -webkit-radial-gradient(center center, circle cover, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(center center, circle cover, yellow, white 50%, blue);
+	}
+
+	.example18
+	{
+		background-image: -webkit-radial-gradient(center center, cover, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(center center, cover, yellow, white 50%, blue);
+	}
+
+	.example19,.example20,.example21,.example22,.example23,.example24
+	{
+		position: relative;
+	}
+
+	.example19:before,.example20:before,.example21:before,.example22:before,.example23:before,.example24:before
+	{
+		position: absolute;
+		left: 15px;
+		top: 65px;
+		content: "";
+		display: block;
+		width: 10px;
+		height: 10px;
+		background: red;
+		border-radius: 8px;
+	}
+
+	.example19
+	{
+		background-image: -webkit-radial-gradient(20px 70px, circle closest-side, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(20px 70px, circle closest-side, yellow, white 50%, blue);
+	}
+
+	.example20
+	{
+		background-image: -webkit-radial-gradient(20px 70px, circle closest-corner, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(20px 70px, circle closest-corner, yellow, white 50%, blue);
+	}
+
+	.example21
+	{
+		background-image: -webkit-radial-gradient(20px 70px, circle farthest-side, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(20px 70px, circle farthest-side, yellow, white 50%, blue);
+	}
+
+	.example22
+	{
+		background-image: -webkit-radial-gradient(20px 70px, circle farthest-corner, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(20px 70px, circle farthest-corner, yellow, white 50%, blue);
+	}
+
+	.example23
+	{
+		background-image: -webkit-radial-gradient(20px 70px, circle contain, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(20px 70px, circle contain, yellow, white 50%, blue);
+	}
+
+	.example24
+	{
+		background-image: -webkit-radial-gradient(20px 70px, circle cover, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(20px 70px, circle cover, yellow, white 50%, blue);
+	}
+
+	.example25
+	{
+		background-image: -webkit-radial-gradient(center center, circle cover, yellow, white 50%, blue);
+		background-image: -moz-radial-gradient(center center, circle cover, yellow, white 50%, blue);
+	}
+
+	.example26
+	{
+		background-image: -webkit-radial-gradient(center center, circle cover, yellow 40%, white 50%, blue);
+		background-image: -moz-radial-gradient(center center, circle cover, yellow 40%, white 50%, blue);
+	}
+
+	.example27
+	{
+		background-image: -webkit-radial-gradient(center center, circle cover, yellow, white 50%, blue 60%);
+		background-image: -moz-radial-gradient(center center, circle cover, yellow, white 50%, blue 60%);
+	}
+
+	/* examples */
+	.example28 
+	{ 
+		background-image: -webkit-radial-gradient(left center,ellipse cover,red,blue);
+		background-image: -moz-radial-gradient(left center,ellipse cover,red,blue);
+	}
+
+	/* Create a rainbow */
+	.example29
+	{
+		background-image: -webkit-radial-gradient(circle,violet,indigo,blue,green,yellow,orange,red);
+		background-image: -moz-radial-gradient(circle,violet,indigo,blue,green,yellow,orange,red);
+	}
+
+	/* Create a stop gradient */
+	.example30
+	{
+		background-image: 
+			-webkit-radial-gradient(
+				circle,
+				yellow 50px, 
+				blue 50px, blue 100px, 
+				orange 100px, orange 150px, 
+				lime 150px, lime 200px
+			);
+		background-image: 
+			-moz-radial-gradient(
+				circle,
+				yellow 50px, 
+				blue 50px, blue 100px, 
+				orange 100px, orange 150px, 
+				lime 150px, lime 200px
+			);
+	}
+	
+	.example31
+	{
+		background-image: 
+			-webkit-repeating-radial-gradient(
+				circle,
+				yellow, 
+				blue 50% 
+			);
+		background-image: 
+			-moz-repeating-radial-gradient(
+				circle,
+				yellow, 
+				blue 50% 
+			);
+	}
+
+	.example32
+	{
+		background-image: 
+			-webkit-repeating-radial-gradient(
+				circle,
+				yellow, 
+				blue 50px 
+			);
+		background-image: 
+			-moz-repeating-radial-gradient(
+				circle,
+				yellow, 
+				blue 50px 
+			);
+	}
+
+	
+</style> 
+</head>
+<body>
+<h1>
+	Exercise - radial-gradient
+</h1>
+<p>
+	Create a simple gradient from left to right. The gradient should be lime to blue with a black color stop in the middle.
+</p>
+<h2 class="clear">
+	start point - undefined
+</h2>
+<div class="small example0">undefined</div>
+<h2 class="clear">
+	start point - single keyword
+</h2>
+<div class="small example1 clear">left</div>
+<div class="small example2">right</div>
+<div class="small example3">top</div>
+<div class="small example4">bottom </div>
+<h2 class="clear">
+	start point - two keywords
+</h2>
+<div class="small example5">left top</div>
+<div class="small example6">left center</div>
+<div class="small example7">left bottom</div>
+<div class="small example8">center top</div>
+<div class="small example9">center center</div>
+<div class="small example10">center bottom</div>
+<div class="small example11">right top</div>
+<div class="small example12">right center</div>
+<div class="small example13">right bottom</div>
+<h2 class="clear">
+	start point - length or percent
+</h2>
+<div class="small example14 clear">20px 20px</div>
+<div class="small example15">60% 60%</div>
+<h2 class="clear">
+	shape
+</h2>
+<div class="small example16">ellipse</div>
+<div class="small example17">circle</div>
+<div class="small example18">undefined</div>
+<h2 class="clear">
+	size
+</h2>
+<div class="small example19">closest-side</div>
+<div class="small example20">closest-corner</div>
+<div class="small example21">farthest-side</div>
+<div class="small example22">farthest-corner</div>
+<div class="small example23">contain</div>
+<div class="small example24">cover</div>
+<h2 class="clear">
+	color-stops with position
+</h2>
+<div class="small example25">default</div>
+<div class="small example26">start with position</div>
+<div class="small example27">end with position</div>
+
+
+
+
+<h2 class="clear">
+	Complex examples
+</h2>
+<p>
+	Experiment!
+</p>
+<div class="example28"></div>
+
+<p>
+	Create a rainbow
+</p>
+<div class="example29"></div>
+<p>
+	Create a stop gradient
+</p>
+<div class="example30"></div>
+<p>
+	Create a repeating pattern using 50%
+</p>
+<div class="example31"></div>
+<p>
+	Create a repeating pattern using pixels
+</p>
+<div class="example32"></div>
+<p>
+	Create a multiple radial-gradients
+</p>
+<div class="example22"></div>
+</body>
+</html>

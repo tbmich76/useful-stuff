@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise -  box-shadow</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 1em;
+		padding: 0 0 3em;
+		color: #000;
+		background: #fff;
+		font: 120%/1.4 helvetica, arial, sans-serif;
+	}
+	
+	div
+	{
+		padding: 1em;
+		border: 1px solid #bbb;
+		background: #eee;
+	}
+	
+	h2 { margin: 0; }
+	
+	/* example1 */
+	.example1
+	{
+		-webkit-box-shadow: 5px 5px 5px #666;
+		box-shadow: 5px 5px 5px #666;
+	}
+	
+	/* example2 */
+	.example2
+	{
+		-webkit-box-shadow: 5px 5px 5px red, 10px 10px 10px orange, 15px 15px 15px yellow;
+		box-shadow: 5px 5px 5px red, 10px 10px 10px orange, 15px 15px 15px yellow;
+	}
+	
+	/* example3 */
+	.example3
+	{
+		-webkit-box-shadow: 0 0 5px yellow;
+		box-shadow: 0 0 5px yellow;
+	}
+	
+	.example3:hover
+	{
+		-webkit-box-shadow: 0 0 10px black;
+		box-shadow: 0 0 10px black;
+	}
+	
+	/* example4*/
+	.example4
+	{
+		-webkit-box-shadow: 5px 5px 20px #666 inset;
+		box-shadow: 5px 5px 20px #666 inset;
+	}
+	
+	/* example5 */
+	.example5
+	{
+		-webkit-box-shadow: 30px 30px 5px -15px #666;
+		box-shadow: 30px 30px 5px -15px #666;
+	}
+	
+</style> 
+</head>
+<body>
+<h1>
+	Exercise -  box-shadow 
+</h1>
+
+<p>
+	<strong>.example1</strong> - Box-shadow below
+</p>
+<div class="example1">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example1</strong> - Multiple shadows
+</p>
+<div class="example2">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example1</strong> - Hover box-shadow
+</p>
+<div class="example3">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example1</strong> - Inset box-shadow
+</p>
+<div class="example4">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example1</strong> - Box-shadow with spread 
+</p>
+<div class="example5">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+</body>
+</html>

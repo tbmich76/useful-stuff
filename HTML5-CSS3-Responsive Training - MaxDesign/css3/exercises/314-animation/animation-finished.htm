@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise -  animation</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 1em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 120%/1.4 helvetica, arial, sans-serif;
+	}
+
+	/* example1 */
+	.example1
+	{
+		width: 100px;
+		height: 100px;
+		background: yellow;
+		animation: example1-animation 4s;
+	}
+
+	@keyframes example1-animation
+	{
+		from { background: red; }
+		to { background: yellow; }
+	}
+
+	/* example2 */
+	.example2
+	{
+		width: 100px;
+		height: 100px;
+		background: red;
+		animation-name: example2-animation;
+		animation-duration: 3s;
+	}
+
+	@keyframes example2-animation
+	{
+		0% { background-color: voilet; }
+		20% { background-color: indigo; }
+		40% { background-color: blue; }
+		60% { background-color: green; }
+		80% { background-color: yellow; }
+		90% { background-color: orange; }
+		100% { background-color: red; }
+	}
+
+	/* example3 */
+	.example3
+	{
+		width: 100px;
+		height: 100px;
+		background: lime;
+		animation-name: example3-animation;
+		animation-duration: 3s;
+		animation-iteration-count: 2;
+	}
+
+
+	@keyframes example3-animation
+	{
+		to { transform: rotate(1turn); }
+	}
+
+	/* example5 */
+	.example5
+	{
+		color: red;
+		animation-name: example5-animation;
+		animation-duration: .4s;
+		animation-iteration-count: 2;
+	}
+
+
+	@keyframes example5-animation
+	{
+		0%,100% { transform: translateX(0); }
+		20%,60% { transform: translateX(-3px); }
+		40%,80% { transform: translateX(3px); }
+	}
+
+	/* example6 */
+	.example6
+	{
+		width: 100px;
+		height: 100px;
+		background: red;
+		position: relative;
+		animation: example6-animation 5s infinite;
+		animation-direction: alternate;
+	}
+
+	@keyframes example6-animation
+	{
+	    0%   { background: red; left: 0px; top: 0px;}
+	    25%  { background: yellow; left: -50px; top: 0px;}
+	    50%  { background: blue; left: -50px; top: -50px;}
+	    75%  { background: green; left: 0px; top: -50px;}
+	    100% { background: red; left: 0px; top: 0px;}
+	}
+</style>
+</head>
+<body>
+	<h1>
+		Exercise -  Animation
+	</h1>
+	<h2>
+		Animate simple color change
+	</h2>
+	<div class="example1">
+		example1-animation
+	</div>
+
+	<h2>
+		Animate multiple color change
+	</h2>
+	<div class="example2">
+		example2-animation
+	</div>
+
+	<h2>
+		Animate transform
+	</h2>
+	<div class="example3">
+		example3-animation
+	</div>
+
+	<h2>
+		Animate error message
+	</h2>
+	<div class="example5">
+		Error - example5
+	</div>
+
+	<h2>
+		Animate alternate direction (not supported in IE9)
+	</h2>
+	<div class="example6">
+		example6
+	</div>
+</body>
+</html>
+

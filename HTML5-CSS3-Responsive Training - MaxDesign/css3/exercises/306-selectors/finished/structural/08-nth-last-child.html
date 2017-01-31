@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: nth-last-child</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	ul { margin: 0; }
+	
+	/* example 1 */
+	.example1 li:nth-last-child(3) { color: red; }
+	
+	/* example 2 */
+	.example2 li:nth-last-child(3n) { color: red; }
+
+	/* example 3 */
+	.example3 li:nth-last-child(3n+1) { color: red; }
+	
+	/* example 4 */
+	.example4 li:nth-last-child(3n-1) { color: red; }
+	
+	/* example 5 */
+	.example5 li:nth-last-child(even) { color: red; }
+	
+	/* example 6 */
+	.example6 li:nth-last-child(odd) { color: red; }
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: nth-last-child
+	</h1>
+	<h2>
+		li:nth-last-child(3)
+	</h2>
+	<div class="example example1">
+		<ul>
+			<li>item1</li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+			<li>item6</li>
+			<li>item7</li>
+			<li>item8</li>
+			<li>item9</li>
+			<li>item10</li>
+		</ul>
+	</div>
+	<h2>
+		li:nth-last-child(3n)
+	</h2>
+	<div class="example example2">
+		<ul>
+			<li>item1</li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+			<li>item6</li>
+			<li>item7</li>
+			<li>item8</li>
+			<li>item9</li>
+			<li>item10</li>
+		</ul>
+	</div>
+	<h2>
+		li:nth-last-child(3n+1)
+	</h2>
+	<div class="example example3">
+		<ul>
+			<li>item1</li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+			<li>item6</li>
+			<li>item7</li>
+			<li>item8</li>
+			<li>item9</li>
+			<li>item10</li>
+		</ul>
+	</div>
+	<h2>
+		li:nth-last-child(3n-1)
+	</h2>
+	<div class="example example4">
+		<ul>
+			<li>item1</li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+			<li>item6</li>
+			<li>item7</li>
+			<li>item8</li>
+			<li>item9</li>
+			<li>item10</li>
+		</ul>
+	</div>
+	<h2>
+		li:nth-last-child(even)
+	</h2>
+	<div class="example example5">
+		<ul>
+			<li>item1</li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+			<li>item6</li>
+			<li>item7</li>
+			<li>item8</li>
+			<li>item9</li>
+			<li>item10</li>
+		</ul>
+	</div>
+	<h2>
+		li:nth-last-child(odd)
+	</h2>
+	<div class="example example6">
+		<ul>
+			<li>item1</li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+			<li>item6</li>
+			<li>item7</li>
+			<li>item8</li>
+			<li>item9</li>
+			<li>item10</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

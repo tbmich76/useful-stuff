@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Title - site name</title>
+<style>
+	body
+	{
+		max-width: 50em;
+		margin: 0;
+		padding: 20px 40px;
+		color: #000;
+		background: #fff;
+		font: 100%/1.3 helvetica, arial, sans-serif;
+	}
+	
+	h2
+	{
+		margin: 2em 0 1em;
+		padding-top: .5em;
+		border-top: 1px solid #ddd;
+	}
+	
+	.example
+	{
+		margin: 1em 0 2em;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
+	
+	/* Example 1: column-count */
+	.example1a
+	{
+		-webkit-column-count: auto;
+		-moz-column-count: auto;
+		column-count: auto;
+	}
+	
+	.example1b
+	{
+		-webkit-column-count: XXX;
+		-moz-column-count: XXX;
+		column-count: XXX;
+	}
+	
+	/* Example 2: column-width */
+	.example2a
+	{
+		-webkit-column-width: auto;
+		-moz-column-width: auto;
+		column-width: auto;
+	}
+	
+	.example2b
+	{
+		-webkit-column-width: XXX;
+		-moz-column-width: XXX;
+		column-width: XXX;
+	}
+	
+	/* Example 3: column-gap */
+	.example3a
+	{
+		-webkit-column-gap: normal;
+		-moz-column-gap: normal;
+		column-gap: normal;
+	}
+	
+	.example3b
+	{
+		-webkit-column-gap: XXX;
+		-moz-column-gap: XXX;
+		column-gap: XXX;
+	}
+	
+	/* Example 4: column-fill */
+	.example4a
+	{
+		-webkit-column-fill: balance;
+		-moz-column-fill: balance;
+		column-fill: balance;
+	}
+	
+	.example4b
+	{
+		-webkit-column-fill: auto;
+		-moz-column-fill: auto;
+		column-fill: auto;
+	}
+	
+	/* Example 5: column-rule-color */
+	.example5a
+	{
+		-webkit-column-rule-style: solid;
+		-moz-column-rule-style: solid;
+		column-rule-style: solid;
+		-webkit-column-rule-color: XXX;
+		-moz-column-rule-color: XXX;
+		column-rule-color: XXX;
+	}
+	
+	/* Example 6: column-rule-style */
+	.example6a
+	{
+		-webkit-column-rule-style: XXX;
+		-moz-column-rule-style: XXX;
+		column-rule-style: XXX;
+	}
+	
+	.example6b
+	{
+		-webkit-column-rule-style: XXX;
+		-moz-column-rule-style: XXX;
+		column-rule-style: XXX;
+	}
+	
+	.example6c
+	{
+		-webkit-column-rule-style: XXX;
+		-moz-column-rule-style: XXX;
+		column-rule-style: XXX;
+	}
+	
+	.example6d
+	{
+		-webkit-column-rule-style: double;
+		-moz-column-rule-style: double;
+		column-rule-style: double;
+	}
+	
+	.example6e
+	{
+		-webkit-column-rule-style: groove;
+		-moz-column-rule-style: groove;
+		column-rule-style: groove;
+	}
+	
+	.example6f
+	{
+		-webkit-column-rule-style: ridge;
+		-moz-column-rule-style: ridge;
+		column-rule-style: ridge;
+	}
+	
+	.example6g
+	{
+		-webkit-column-rule-style: inset;
+		-moz-column-rule-style: inset;
+		column-rule-style: inset;
+	}
+	
+	.example6h
+	{
+		-webkit-column-rule-style: outset;
+		-moz-column-rule-style: outset;
+		column-rule-style: outset;
+	}
+	
+	/* Example 7: column-rule-width */
+	.example7a
+	{
+		-webkit-column-rule-style: solid;
+		-moz-column-rule-style: solid;
+		column-rule-style: solid;
+		-webkit-column-rule-width: XXX;
+		-moz-column-rule-width: XXX;
+		column-rule-width: XXX;
+	}
+	
+	.example7b
+	{
+		-webkit-column-rule-style: solid;
+		-moz-column-rule-style: solid;
+		column-rule-style: solid;
+		-webkit-column-rule-width: XXX;
+		-moz-column-rule-width: XXX;
+		column-rule-width: XXX;
+	}
+	
+	.example7c
+	{
+		-webkit-column-rule-style: solid;
+		-moz-column-rule-style: solid;
+		column-rule-style: solid;
+		-webkit-column-rule-width: XXX;
+		-moz-column-rule-width: XXX;
+		column-rule-width: XXX;
+	}
+	
+	.example7d
+	{
+		-webkit-column-rule-style: solid;
+		-moz-column-rule-style: solid;
+		column-rule-style: solid;
+		-webkit-column-rule-width: XXX;
+		-moz-column-rule-width: XXX;
+		column-rule-width: XXX;
+	}
+	
+	/* Example 8: column-rule */
+	.example8a
+	{
+		-webkit-column-rule: XXX;
+		-moz-column-rule: XXX;
+		column-rule: XXX;
+	}
+	
+	/* Example 9: column-span */
+	.example9a h4, .example9b h4
+	{
+		margin: 0 0 .5em;
+		border-bottom: 1px solid red;
+	}
+	
+	.example9a h4
+	{
+		-webkit-column-span:XXX;
+		-moz-column-span: XXX;
+		column-span: XXX;
+	}
+	
+	.example9b h4
+	{
+		-webkit-column-span: XXX;
+		-moz-column-span: XXX;
+		column-span: XXX;
+	}
+	
+	/* Example 10: columns */
+	.example10a
+	{
+		-webkit-columns: XXX;
+		-moz-columns: XXX;
+		columns: XXX;
+	}
+	
+	.example10b
+	{
+		-webkit-columns: XXX;
+		-moz-columns: XXX;
+		columns: XXX;
+	}
+	
+	.example10c
+	{
+		-webkit-columns: XXX;
+		-moz-columns: XXX;
+		columns: XXX;
+	}
+</style>
+</head>
+<body>
+
+	<h1>
+		CSS3 Multi-column Layouts
+	</h1>
+
+	<!-- Example 1 -->
+	<h2>
+		Example 1: <code>column-count</code>
+	</h2>
+	<h3>
+		Example 1a: <code>column-count: auto</code> (default value)
+	</h3>
+	<div class="example1a" style="margin: 1em 0 2em">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 1b: <code>column-count: 2</code>
+	</h3>
+	<div class="example1b" style="margin: 1em 0 2em">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+
+	<!-- Example 2 -->
+	<h2>
+		Example 2: <code>column-width</code>
+	</h2>
+	<h3>
+		Example 2a: <code>column-width: auto</code> (default value)
+	</h3>
+	<div class="example2a" style="margin: 1em 0 2em">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 2b: <code>column-width: 150px</code>
+	</h3>
+	<div class="example2b" style="margin: 1em 0 2em">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+
+	<!-- Example 3 -->
+	<h2>
+		Example 3: <code>column-gap</code>
+	</h2>
+	<h3>
+		Example 3a: <code>column-gap: normal</code> (default value)
+	</h3>
+	<div class="example example3a">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 3b: <code>column-gap: 30px</code>
+	</h3>
+	<div class="example example3b">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+
+	<!-- Example 4 -->
+	<h2>
+		Example 4: <code>column-fill</code>
+	</h2>
+	<h3>
+		Example 4a: <code>column-fill: balance</code> (default value)
+	</h3>
+	<div class="example example4a">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 4b: <code>column-fill: auto</code>
+	</h3>
+	<div class="example example4b">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+
+	<!-- Example 5 -->
+	<h2>
+		Example 5: <code>column-rule-color</code>
+	</h2>
+	<h3>
+		Example 5a: column-rule-color: blue
+	</h3>
+	<div class="example example5a">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+
+	<!-- Example 6 -->
+	<h2>
+		Example 6: <code>column-rule-style</code>
+	</h2>
+
+	<h3>
+		Example 6a: <code>column-rule-style: dotted</code>
+	</h3>
+	<div class="example example6a">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 6b: <code>column-rule-style: dashed</code>
+	</h3>
+	<div class="example example6b">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 6c: <code>column-rule-style: solid</code>
+	</h3>
+	<div class="example example6c">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 6d: <code>column-rule-style: double</code>
+	</h3>
+	<div class="example example6d">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 6e: <code>column-rule-style: groove</code>
+	</h3>
+	<div class="example example6e">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 6f: <code>column-rule-style: ridge</code>
+	</h3>
+	<div class="example example6f">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 6g: <code>column-rule-style: inset</code>
+	</h3>
+	<div class="example example6g">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 6h: <code>column-rule-style: outset</code>
+	</h3>
+	<div class="example example6h">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+
+	<!-- Example 7 -->
+	<h2>
+		Example 7: <code>column-rule-width</code>
+	</h2>
+	<h3>
+		Example 7a: <code>column-rule-width: medium</code> (default value)
+	</h3>
+	<div class="example example7a">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 7b: <code>column-rule-width: thin</code>
+	</h3>
+	<div class="example example7b">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 7c: <code>column-rule-width: thick</code>
+	</h3>
+	<div class="example example7c">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example 7d: <code>column-rule-width: 1px</code>
+	</h3>
+	<div class="example example7d">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+
+	<!-- Example 8 -->
+	<h2>
+		Example 8: <code>column-rule</code>
+	</h2>
+	<h3>
+		Example8a: <code>column-rule: 1px solid blue</code>
+	</h3>
+	<div class="example example8a">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+
+	<!-- Example 9 -->
+	<h2>
+		Example 9: <code>column-span</code>
+	</h2>
+	<h3>
+		Example9a: <code>column-span: 1</code> (default value)
+	</h3>
+	<div class="example example9a">
+		<h4>
+			Heading
+		</h4>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example9b: <code>column-span: all</code>
+	</h3>
+	<div class="example example9b">
+		<h4>
+			Heading
+		</h4>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+
+	<!-- Example 10 -->
+	<h2>
+		Example 10: <code>columns</code>
+	</h2>
+	<h3>
+		Example10a: <code>columns: 3</code>
+	</h3>
+	<div class="example example10a">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example10b: <code>columns: 100px</code>
+	</h3>
+	<div class="example example10b">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>
+		Example10c: <code>columns: 100px 3</code>
+	</h3>
+	<div class="example example10c">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+
+</body>
+</html>

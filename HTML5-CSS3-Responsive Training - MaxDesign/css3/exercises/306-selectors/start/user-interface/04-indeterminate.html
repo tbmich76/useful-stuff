@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: indeterminate</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/* example 1 */
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#apples").prop("indeterminate", true);
+	});
+</script>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: indeterminate
+	</h1>
+	<h2>Example 1</h2>
+	<form action="#">
+		<ul class="indeterminate">
+			<li><input id="bananas" name="one" type="checkbox"> <label for="bananas">Bananas</label></li>
+			<li><input id="apples" name="two" type="checkbox" checked> <label for="apples">Apples</label>
+				<ul>
+					<li><input id="red-apples" name="three" type="checkbox"> <label for="red-apples">Red apples</label></li>
+					<li><input id="green-apples" name="four" type="checkbox" checked> <label for="green-apples">Green apples</label></li>
+				</ul>	
+			</li>
+			<li><input id="pears" name="five" type="checkbox"> <label for="pears">Pears</label></li>
+		</ul>	
+	</form>
+</div>
+</body>
+</html>

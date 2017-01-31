@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise - HTML5 forms</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 1em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 120%/1.4 helvetica, arial, sans-serif;
+	}
+	
+	h2 { margin: 0; }
+	p { margin: 2em 0 .5em; }
+	
+	div
+	{
+		overflow: hidden;
+		clear: left;
+		padding: 0 0 .5em;
+	}
+	
+	label
+	{
+		float: left;
+		width: 18em;
+		margin: 0 1em 0 0;
+		text-align: right;
+	}
+	
+	.indent
+	{
+		margin: 0 0 0 19em;
+		width: 15em;
+	}
+	
+	input
+	{
+		float: left;
+		width: 15em;
+		margin: .3em 0 0;
+		padding: .2em;
+		border: 1px solid #333;
+		color: green;
+		font: 100%/1 helvetica, arial, sans-serif;
+	}
+	
+	.hint
+	{
+		font-size: 70%;
+		color: red;
+	}
+</style> 
+</head>
+<body>
+<h1>
+	Exercise - HTML5 forms
+</h1>
+<h2>
+	New HTML5 form attributes
+</h2>
+<form action="#" method="post">
+	<div>
+		<label for="password">Password <span class="hint">(autocomplete)</span></label>
+		<input name="password" id="password" type="password">
+	</div>
+	<div>
+		<label for="code">Code <span class="hint">(autofocus - boolean)</span></label>
+		<input name="code" id="code" type="text">
+	</div>
+	<div>
+		<label for="name">Name <span class="hint">(required - boolean)</span></label>
+		<input name="name" id="name" type="text">
+	</div>
+	<div>
+		<label for="username">Username <span class="hint">(form)</span></label>
+		<input name="username" id="username" type="text">
+	</div>
+	<div>
+		<label for="address">Address <span class="hint">(placeholder)</span></label>
+		<input name="address" id="address" type="text">
+	</div>
+	<div>
+		<label for="email">Email <span class="hint">(multiple - boolean)</span></label>
+		<input name="email" id="email" type="text">
+	</div>
+	<div>
+		<label for="barcode">Barcode <span class="hint">(pattern)</span></label>
+		<input name="barcode" id="barcode" type="text">
+	</div>
+</form>
+<h2>
+	New HTML5 input types
+</h2>
+<form action="#" method="post">
+	<div>
+		<label for="search">Search <span class="hint">(search)</span></label>
+		<input type="text" name="search" id="search" >
+	</div>
+	<div>
+		<label for="emailaddress">Email <span class="hint">(email)</span></label>
+		<input type="text" name="emailaddress" id="emailaddress">
+	</div>
+	<div>
+		<label for="web">Web address <span class="hint">(url)</span></label>
+		<input type="text" name="web" id="web">
+	</div>
+	<div>
+		<label for="phone">Phone number <span class="hint">(tel)</span></label>
+		<input type="text" name="phone" id="phone">
+	</div>
+	<div>
+		<label for="books">Number <span class="hint">(number with step and min/max)</span></label>
+		<input type="text" name="books" id="books">
+	</div>
+	<div>
+		<label for="movie">Rate this movie <span class="hint">(range 1-10)</span></label>
+		<input type="text" name="movie" id="movie">
+	</div>
+	<div>
+		<label for="favourite">Favourite color <span class="hint">(color)</span></label>
+		<input type="text" id="favourite" name="favourite">
+	</div>
+	<div>
+		<label for="startdate">Start my subscription <span class="hint">(date with min/max)</span></label>
+		<input type="text" id="startdate" name="startdate">
+	</div>
+	<div>
+		<label for="startmonth">Choose a month <span class="hint">(month)</span></label>
+		<input type="text" id="startmonth" name="startmonth">
+	</div>
+	<div>
+		<label for="startmonth">Choose a week <span class="hint">(week)</span></label>
+		<input type="text" id="startweek" name="startweek">
+	</div>
+	<div>
+		<label for="startmonth">Choose a time <span class="hint">(time)</span></label>
+		<input type="text" id="starttime" name="starttime">
+	</div>
+	<div>
+		<label for="startmonth">Choose a date/time <span class="hint">(date/time)</span></label>
+		<input type="text" id="startdt" name="startdt">
+	</div>
+	<div>
+		<label for="startmonth">Local date/time <span class="hint">(datetime-local)</span></label>
+		<input type="text" id="startdtl" name="startdtl">
+	</div>
+</form>
+<h2>
+	New HTML5 form elements
+</h2>
+<form action="#" method="post">
+	<div>
+		<label for="fruitchoice">Choose a fruit <span class="hint">(datalist)</span></label>
+		<input id="fruitchoice" type="text">
+		
+		<select>
+			<option>Apple</option>
+			<option>Pear</option>
+			<option>Banana</option>
+		</select>
+		
+	</div>
+	<div>
+		<label for="security">Encryption:</label> 
+		<keygen id="security" name="security">
+	</div>
+	<div class="indent">
+		<output name="result" onforminput="value=numa.valueAsNumber + numb.valueAsNumber">Output</output>
+	</div>	
+	<div>
+		<label for="progress">Downloading <span class="hint">(progress)</span></label>
+		<progress id="progress">
+			<span>76</span>
+		</progress>
+	</div>
+	<div class="indent">
+		<meter value="2" min="0" max="10">2 out of 10</meter>
+	</div>
+</form>
+</body>
+</html>

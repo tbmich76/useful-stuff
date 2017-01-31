@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise -  text-shadow</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 1em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 120%/1.4 helvetica, arial, sans-serif;
+	}
+	
+	div
+	{
+		padding: 20px;
+		border: 1px solid #bbb;
+	}
+	
+	h2
+	{
+		margin: 0;
+		font-size: 50px;
+	}
+	
+	/* example1 */
+	.example1 { text-shadow: 5px 5px 5px #999; }
+	
+	/* example2 */
+	.example2 { text-shadow: -5px -5px 5px #999; }
+	
+	/* example3 */
+	.example3 { background: #999; }
+	
+	.example3 h2
+	{
+		color: #000;
+		text-shadow: 0 1px 0 #fff;
+	}
+	
+	/* example4 */
+	.example4 { text-shadow: 1px 1px 0 white, 2px 2px 0 gray; }
+	
+	/* example5 */
+	.example5 { background: #000; }
+	
+	.example5 h2
+	{
+		color: #fff;
+		text-shadow: #f4dcf1 0px 0px 10px, #e9aae1 0px 0px 20px, #ed6edd 0px 0px 30px, #f43bdc 0px 0px 40px, #FF00DE 0px 0px 50px, #FF00DE 0px 0px 60px, #FF00DE 0px 0px 70px;
+	}
+	
+	/* example6 */
+	.example6
+	{
+		color: rgba(0, 160, 255, 0.5);
+		text-shadow: rgba(255,0,222,0.3) 6px 6px 0px;
+	}
+</style> 
+</head>
+<body>
+<h1>
+	Exercise -  text-shadow 
+</h1>
+
+<p>
+	<strong>.example1</strong> - Text-shadow below
+</p>
+<div>
+	<h2 class="example1">
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example2</strong> - Text-shadow above
+</p>
+<div>
+	<h2 class="example2">
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example3</strong> - Text-shadow to create embossed look
+</p>
+<div class="example3">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example4</strong> - Text-shadow using double shadow
+</p>
+<div>
+	<h2 class="example4">
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example5</strong> - Text-shadow with multiple shadows to create glow
+</p>
+<div class="example5">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example6</strong> - Color and text-shadow set to alpha
+</p>
+<div>
+	<h2 class="example6">
+		Sample heading 
+	</h2>
+</div>
+
+</body>
+</html>

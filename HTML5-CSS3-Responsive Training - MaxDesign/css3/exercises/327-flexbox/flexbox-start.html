@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Flexbox examples</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles-start.css">
+</head>
+<body>
+	<h1>Flexbox</h1>
+
+	<!-- default -->
+	<h2>Default non-flex box</h2>
+	<div class="display-block">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<!-- flex -->
+	<h2><code>display: flex</code></h2>
+	<div class="display-flex">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+
+	<!-- flex-direction -->
+	<h2><code>flex-direction</code></h2>
+
+	<h3><code>flex-direction: row</code> (default)</h3>
+	<div class="flex-direction1">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-direction: row-reverse</code></h3>
+	<div class="flex-direction2">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-direction: column</code></h3>
+	<div class="flex-direction3">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-direction: column-reverse</code></h3>
+	<div class="flex-direction4">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+
+	<!-- flex-wrap -->
+	<h2><code>flex-wrap</code></h2>
+
+	<h3><code>flex-wrap: nowrap</code> (default)</h3>
+	<div class="flex-wrap1">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-wrap: wrap</code></h3>
+	<div class="flex-wrap2">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-wrap: wrap-reverse</code></h3>
+	<div class="flex-wrap3">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+
+	<!-- justify-content -->
+	<h2><code>justify-content</code></h2>
+
+	<h3><code>justify-content: flex-start</code> (default)</h3>
+	<div class="justify-content1">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>justify-content: flex-end</code></h3>
+	<div class="justify-content2">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>justify-content: center</code></h3>
+	<div class="justify-content3">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>justify-content: space-between</code></h3>
+	<div class="justify-content4">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>justify-content: space-around</code></h3>
+	<div class="justify-content5">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+
+	<!-- align-items -->
+	<h2><code>align-items</code></h2>
+
+	<h3><code>align-items: stretch</code></h3>
+	<div class="align-items1">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>align-items: center</code></h3>
+	<div class="align-items2">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>align-items: flex-start</code></h3>
+	<div class="align-items3">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>align-items: flex-end</code></h3>
+	<div class="align-items4">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>align-items: baseline</code></h3>
+	<div class="align-items5">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+
+	<!-- align-items -->
+	<h2><code>align-content</code></h2>
+
+	<h3><code>align-content: stretch</code> (default)</h3>
+	<div class="align-content1">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>align-content: center</code> (with <code>flex-wrap: wrap</code>)</h3>
+	<div class="align-content2">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>align-content: flex-start</code> (with <code>flex-wrap: wrap</code>)</h3>
+	<div class="align-content3">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>align-content: flex-end</code> (with <code>flex-wrap: wrap</code>)</h3>
+	<div class="align-content4">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>align-content: space-between</code> (with <code>flex-wrap: wrap</code>)</h3>
+	<div class="align-content5">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>align-content: space-around</code> (with <code>flex-wrap: wrap</code>)</h3>
+	<div class="align-content6">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+
+	<!-- order -->
+	<h2><code>order</code></h2>
+
+	<h3><code>order: 1</code></h3>
+	<div class="order1">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>order: 2</code></h3>
+	<div class="order2">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<!-- flex-grow -->
+	<h2><code>flex-grow</code></h2>
+
+	<h3><code>flex-grow: 0 and 1</code></h3>
+	<div class="flex-grow1">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-grow: 1 and 2</code></h3>
+	<div class="flex-grow2">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-grow: 1 and 3</code></h3>
+	<div class="flex-grow3">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-grow: 1 and 4</code></h3>
+	<div class="flex-grow4">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-grow: 1 and 5</code></h3>
+	<div class="flex-grow5">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3><code>flex-grow: 1 and 6</code></h3>
+	<div class="flex-grow6">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+
+	<!-- flex-shrink -->
+	<h2><code>flex-shrink</code></h2>
+
+	<h3><code>flex-shrink: 1</code></h3>
+	<div class="flex-shrink1">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+
+	<!-- align-self -->
+	<h2><code>align-self</code></h2>
+
+	<h3>align-self: auto</h3>
+	<div class="align-self1">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3>align-self: stretch</h3>
+	<div class="align-self2">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3>align-self: center</h3>
+	<div class="align-self3">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3>align-self: flex-start</h3>
+	<div class="align-self4">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3>align-self: flex-end</h3>
+	<div class="align-self5">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+	<h3>align-self: baseline</h3>
+	<div class="align-self6">
+		<div class="parent">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

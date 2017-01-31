@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise - translate()</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 0;
+		padding: 20px 50px;
+		color: #000;
+		background: #fff;
+		font: 100%/1.4 helvetica, arial, sans-serif;
+	}
+
+	h1 { margin: 0; }
+	h2 { margin: 1em 0 0; }
+
+	.parent
+	{
+		width: 200px;
+		height: 200px;
+		margin: 1em 0 2em;
+		border: 5px solid #aaa;
+		background: #eee;
+	}
+
+	.example
+	{
+		width: 100px;
+		height: 100px;
+		border: 5px solid red;
+		background: rgba(200,0,0,.1);
+	}
+
+	/* block level translate examples */
+	.example1 { transform: ; }
+	.example2 { transform: ; }
+	.example3 { transform: ; }
+	.example4 { transform: ; }
+
+	/* inline translate example */
+	.example5
+	{
+		display: ;
+		transform: ;
+	}
+
+	/* translateX examples */
+	.example6 { transform: ; }
+	.example7 { transform: ; }
+
+	/* translateY examples */
+	.example8 { transform: ; }
+
+	.example9
+	{
+		border: 2px solid red;
+		background: rgba(200,0,0,.1);
+	}
+
+	.example9:active { transform: ; }
+</style>
+</head>
+<body>
+	<h1>
+		Exercise - translate()
+	</h1>
+	<h2>
+		Control block-level example
+	</h2>
+	<div class="parent">
+		<div class="example"></div>
+		Some text here
+	</div>
+	<h2>
+		Example 1: translate(30px, 30px)
+	</h2>
+	<div class="parent">
+		<div class="example example1"></div>
+		Some text here
+	</div>
+	<h2>
+		Example 2: translate(-30px, -30px)
+	</h2>
+	<div class="parent">
+		<div class="example example2"></div>
+		Some text here
+	</div>
+	<h2>
+		Example 3: translate(10%, 50%)
+	</h2>
+	<div class="parent">
+		<div class="example example3"></div>
+		Some text here
+	</div>
+	<h2>
+		Example 4: translate(-20%, -20%)
+	</h2>
+	<div class="parent">
+		<div class="example example4"></div>
+		Some text here
+	</div>
+
+	<h2>
+		Control inline example
+	</h2>
+	<div class="parent">
+		<span class="example">inline</span>
+		Some text here
+	</div>
+
+	<h2>
+		Example 5: inline element - translate(20px, 20px)
+	</h2>
+	<div class="parent">
+		<span class="example example5">inline</span>
+		Some text here
+	</div>
+
+	<h2>
+		Example 6: translateX(30px)
+	</h2>
+	<div class="parent">
+		<div class="example example6"></div>
+		Some text here
+	</div>
+	<h2>
+		Example 7: translateX(-30px)
+	</h2>
+	<div class="parent">
+		<div class="example example7"></div>
+		Some text here
+	</div>
+
+	<h2>
+		Example 8: translateY(30px)
+	</h2>
+	<div class="parent">
+		<div class="example example8"></div>
+		Some text here
+	</div>
+	<h2>
+		Example 9: translateY(2px)
+	</h2>
+	<div class="parent">
+		<button type="button" class="example9">Submit</button>
+	</div>
+</body>
+</html>

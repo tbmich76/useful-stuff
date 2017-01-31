@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise - transition</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 0;
+		padding: 20px 50px;
+		color: #000;
+		background: #fff;
+		font: 100%/1.4 helvetica, arial, sans-serif;
+	}
+
+	.example
+	{
+		display: inline-block;
+		padding: 10px;
+		font-size: 200%;
+	}
+
+	.example1
+	{
+		color: white;
+		background-color: red;
+		transition: background-color 1s;
+	}
+
+	.example1:hover
+	{
+		color: black;
+		background-color: yellow;
+	}
+
+	.example2
+	{
+		color: white;
+		background-color: gray;
+		border: 10px solid green;
+		transition-property: color, background-color, border;
+		transition-duration: 1s, 2s, 3s;
+		transition-timing-function: ease-in, ease-out, linear;
+		transition-delay: 2s, 4s, 6s;
+	}
+
+	.example2:hover
+	{
+		color: black;
+		background-color: yellow;
+		border: 10px solid pink;
+	}
+
+	.example3
+	{
+		color: white;
+		background-color: gray;
+		border: 10px solid green;
+		transition:
+			color 1s ease 2s,
+			background-color 2s ease 4s,
+			border 3s ease 6s;
+	}
+
+	.example3:hover
+	{
+		color: yellow;
+		background-color: purple;
+		border: 10px solid black;
+	}
+</style>
+</head>
+<body>
+	<h1>
+		Exercise - transition
+	</h1>
+	<h2>
+		Simple example
+	</h2>
+	<p>
+		background-color: 1s
+	</p>
+	<p>
+		<a class="example example1" href="#">Example1</a>
+	</p>
+	<h2>
+		Longhand example
+	</h2>
+	<p>
+		color: 1s with 2s delay<br>
+		background-color: 2s with 4s delay<br>
+		border: 3s with 6s delay
+	</h2>
+	<p>
+		<a class="example example2" href="#">Example2</a>
+	</p>
+	<h2>
+		Shorthand example
+	</h2>
+	<p>
+		color: 1s with 2s delay<br>
+		background-color: 2s with 4s delay<br>
+		border: 3s with 6s delay
+	</h2>
+	<p>
+		<a class="example example2" href="#">Example2</a>
+	</p>
+</body>
+</html>

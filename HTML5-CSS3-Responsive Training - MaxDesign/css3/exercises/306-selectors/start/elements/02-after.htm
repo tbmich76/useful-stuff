@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: after</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/* example 1 */
+
+
+	/* example 2 */
+
+	
+	/* example 3 */
+
+
+	/* example 4 */
+	.four:after {
+		content: "";
+		width: 20px;
+		height: 20px;
+		background: red;
+		display: block;
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: after
+	</h1>
+	<h2>
+		Option 1: Text generated content
+	</h2>
+	<p class="example one">
+		Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+	</p>
+	<h2>
+		Option 2: Image generated content
+	</h2>
+	<p class="example two">
+		Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+	</p>	
+	<h2>
+		Option 3: Attribute generated content
+	</h2>
+	<p class="example three">
+		This is a paragraph with a class attribute.
+	</p>
+	<h2>
+		Option 4: Empty generated content
+	</h2>
+	<p class="example four">
+		Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+	</p>
+</div>
+</body>
+</html>

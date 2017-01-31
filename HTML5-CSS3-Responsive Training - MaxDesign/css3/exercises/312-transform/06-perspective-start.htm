@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise - perspective()</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 0;
+		padding: 20px 50px;
+		color: #000;
+		background: #fff;
+		font: 100%/1.4 helvetica, arial, sans-serif;
+	}
+
+	h1 { margin: 0; }
+	h2 { margin: 1em 0 0; }
+
+	.parent
+	{
+		width: 200px;
+		height: 200px;
+		margin: 1em 0 2em;
+		border: 5px solid #aaa;
+		background: #eee;
+	}
+
+	.example
+	{
+		width: 100px;
+		height: 100px;
+		border: 5px solid red;
+		background: rgba(200,0,0,.1);
+	}
+
+	.example1:hover
+	{
+		-webkit-transform: ;
+		-moz-transform: ;
+		transform: ;
+	}
+
+	.example2:hover
+	{
+		-webkit-transform: ;
+		-moz-transform: ;
+		transform: ;
+	}
+
+</style>
+</head>
+<body>
+	<h1>
+		Exercise - perspective()
+	</h1>
+	<h2>
+		Control example
+	</h2>
+	<div class="parent">
+		<div class="example"></div>
+		Some text here
+	</div>
+	<h2>
+		Example 1: perspective( 600px ) rotateX( 45deg )
+	</h2>
+	<div class="parent">
+		<div class="example example1"></div>
+		Some text here
+	</div>
+	<h2>
+		Example 2: perspective( 600px ) rotateX( 45deg )
+	</h2>
+	<div class="parent">
+		<div class="example example2"></div>
+		Some text here
+	</div>
+
+</body>
+</html>

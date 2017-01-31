@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: default</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/* example 1 */
+	.example1 button:default { border: 5px solid red; }
+
+	/* example 2 */
+	.example2 input:default { border: 5px solid red; }
+
+	/* example 3 */
+	.example3 input:default { border: 5px solid red; }
+
+	/* example 4 */
+	.example4 input:default + label { border: 5px solid red; }
+
+	/* example 5 */
+	.example5 input:default + label { border: 5px solid red; }	
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: default
+	</h1>
+	<h2>Example 1 - button elements</h2>
+	<form class="example1" method="get">
+		<button type="submit">Submit</button>
+		<button type="button">Cancel</button>
+		<button type="reset">Reset</button>
+	</form>
+	<h2>Example 2 - input type="submit"</h2>
+	<form class="example2" method="get">
+		<input type="reset" value="Reset">
+		<input type="submit" value="Submit1">
+		<input type="submit" value="Submit2">
+	</form>
+	<h2>Example 3 - input type="image"</h2>
+	<form class="example3" method="get">
+		<input type="image" src="x-submit.png" alt="Submit1">
+		<input type="image" src="x-reset.png" alt="Reset">
+	</form>
+	<h2>Example 4 - radio - checked</h2>
+	<form class="example4" method="get">
+		<input id="r1" name="choice" type="radio" checked>
+		<label for="r1">checked</label><br>
+		<input id="r2" name="choice" type="radio">
+		<label for="r2">not checked</label>
+	</form>
+	<h2>Example 5 - checkbox - checked</h2>
+	<form class="example5" method="get">
+		<input id="c1" name="choice" type="checkbox" checked>
+		<label for="c1">checked</label><br>
+		<input id="c2" name="choice" type="checkbox">
+		<label for="c2">not checked</label>
+	</form>
+</div>
+</body>
+</html>

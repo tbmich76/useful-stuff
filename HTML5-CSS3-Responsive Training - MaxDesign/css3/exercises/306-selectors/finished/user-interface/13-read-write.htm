@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: read-write</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/* example 1 */
+	textarea:read-write { border: 5px solid green; }
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: read-write
+	</h1>
+	<h2>Example 1</h2>
+	<form class="example" action="#">
+		<div>
+			<label for="one">Label 1</label><br>
+			<textarea id="one" name="one" rows="3" cols="20"></textarea>
+		</div>
+		<div>
+			<label for="two">Label 2 (readonly)</label><br>
+			<textarea id="two" readonly name="two" rows="3" cols="20"></textarea>
+		</div>
+	</form>
+</div>
+</body>
+</html>

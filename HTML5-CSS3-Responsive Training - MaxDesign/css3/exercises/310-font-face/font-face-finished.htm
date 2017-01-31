@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise - font-face</title>
+<style>
+	@font-face
+	{
+		font-family: 'fontName';
+			src:
+				url('font.eot');
+			src:
+				url('font.eot?#iefix') format('embedded-opentype'),
+				url('font.woff') format('woff'),
+				url('font.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+	}
+
+	body
+	{
+		width: 35em;
+		margin: 1em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 120%/1.4 helvetica, arial, sans-serif;
+	}
+
+	h2
+	{
+		font-family: 'fontName', Arial, Helvetica, sans-serif;
+		font-size: 56px;
+		line-height: 1;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	h3 { font: 36px/1 'fontName', Arial, Helvetica, sans-serif; }
+</style>
+</head>
+<body>
+<h1>
+	Exercise - font-face
+</h1>
+<div>
+	<h2>
+		A level 2 heading
+	</h2>
+	<p>
+		Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+	</p>
+	<h3>
+		A level 3 heading
+	</h3>
+	<p>
+		Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+	</p>
+	<p>
+		Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+	</p>
+</div>
+</body>
+</html>

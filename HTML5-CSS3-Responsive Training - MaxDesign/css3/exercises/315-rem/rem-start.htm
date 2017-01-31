@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise -  rem units</title>
+<style>
+	html { font-size: 24px; }
+
+	body
+	{
+		width: 35em;
+		margin: 1em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 100%/1.4 helvetica, arial, sans-serif;
+	}
+
+	h1 { font-size: 38px; }
+	h2 { font-size: 24px; }
+	.example1 li li,.example2 li li,.example3 li li { color: red; }
+
+	/* add new classes */
+	.example1 li { font-size: 80%; }
+	.example2 li { font-size: .8em; }
+	.example3 li { font-size: .8em; }
+</style>
+</head>
+<body>
+	<h1>
+		Exercise -  rem units
+	</h1>
+	<h2>
+		Using percents
+	</h2>
+	<ul class="example1">
+		<li>List item 1 - font-size = 19.2px</li>
+		<li>List item 2 - font-size = 19.2px</li>
+		<li>List item 3 - font-size = 19.2px
+			<ul>
+				<li>Sub-list item 1 - font-size = 15.36px</li>
+				<li>Sub-list item 2 - font-size = 15.36px</li>
+			</ul>
+		</li>
+		<li>List item 4 - font-size = 19.2px</li>
+	</ul>
+	<h2>
+		Using ems
+	</h2>
+	<ul class="example2">
+		<li>List item 1 - font-size = 19.2px</li>
+		<li>List item 2 - font-size = 19.2px</li>
+		<li>List item 3 - font-size = 19.2px
+			<ul>
+				<li>Sub-list item 1 - font-size = 15.36px</li>
+				<li>Sub-list item 2 - font-size = 15.36px</li>
+			</ul>
+		</li>
+		<li>List item 4 - font-size = 19.2px</li>
+	</ul>
+	<h2>
+		Using rems
+	</h2>
+	<ul class="example3">
+		<li>List item 1 - font-size = 19.2px</li>
+		<li>List item 2 - font-size = 19.2px</li>
+		<li>List item 3 - font-size = 19.2px
+			<ul>
+				<li>Sub-list item 1 - font-size = 19.2px</li>
+				<li>Sub-list item 2 - font-size = 19.2px</li>
+			</ul>
+		</li>
+		<li>List item 4 - font-size = 19.2px</li>
+	</ul>
+
+
+
+</body>
+</html>
+

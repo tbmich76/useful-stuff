@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: empty</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	p
+	{
+		padding: 10px;
+		border: 1px solid green;
+	}
+	
+	/* example 1 */
+	p:empty { border: 1px solid red; }
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: empty
+	</h1>
+	<div class="example">
+		<h2>A paragraph with content</h2>
+		<p>This is a paragraph</p>
+		<h2>A paragraph with a space character</h2>
+		<p> </p>
+		<h2>An empty paragraph</h2>
+		<p></p>
+	</div>
+</div>
+</body>
+</html>

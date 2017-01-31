@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>HTML5 video</title>
+<style type="text/css" media="screen">
+	body
+	{
+		width: 40em;
+		margin: 2em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 100%/1.2 arial, helvetica, sans-serif;
+	}
+	
+	h1 { font-size: 300%; }
+	
+	video
+	{
+		border: 2px solid #999;
+		border-radius: 6px;
+		-moz-border-radius: 6px;
+		-webkit-box-shadow: 5px 5px 7px rgba(0,0,0,.3);
+		box-shadow: 5px 5px 7px rgba(0,0,0,.3);
+	}
+</style>
+</head>
+<body>
+<h1>
+	HTML5 video
+</h1>
+<video width="426" height="320" controls poster="poster.png">
+	<source src="test-mp4.mp4" type='video/mp4; codecs="avc1.43E01E, mp4a.40.2"'>
+	<source src="test-webm.webm" type='video/webm'>
+	<source src="test-ogv.ogv" type='video/ogg'>
+	<iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/hrwRG806f88" frameborder="0" allowfullscreen></iframe>
+</video>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise: border-radius</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 1em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 120%/1.4 helvetica, arial, sans-serif;
+	}
+	
+	h2 { margin: 0; }
+	p { margin: 2em 0 .5em; }
+	
+	div
+	{
+		padding: 1em;
+		border: 3px solid red;
+	}
+	
+	/* example1 */
+	.example1 { 
+		border-radius: 10px;
+	}
+	
+	/* example2 */
+	.example2 {
+		border-radius: 10px 10px 0 0;
+	 }
+	
+	/* example3 */
+	.example3 { 
+		border-radius: 5px 10px 15px 20px;
+	}
+	
+	/* example4 */
+	.example4 { 
+		border-radius: 50px 20px 80px 5px / 20px 70px 10px 1px;
+	}
+</style> 
+</head>
+<body>
+<h1>
+	Exercise: border-radius 
+</h1>
+
+<p>
+	<strong>.example1</strong> - Create a small <code>border-radius</code> on all corners of the element
+</p>
+<div class="example1">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example2</strong> - Create a larger <code>border-radius</code> on the top left and top right corners only
+</p>
+<div class="example2">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example3</strong> - Create a <code>border-radius</code> that has a different value for all four corners
+</p>
+<div class="example3">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+
+<p>
+	<strong>.example4</strong> - Create a <code>border-radius</code> with different radii for each corner and side
+</p>
+<div class="example4">
+	<h2>
+		Sample heading 
+	</h2>
+</div>
+</body>
+</html>

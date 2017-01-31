@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: [att^=val]</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/* example 1 */
+	a[href^="http"] { color: red; }
+	a[href^="mailto"] { color: green; }
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: [att^=val] - starts with
+	</h1>
+	<div class="example">
+		<p>
+			Lorem ipsum <a href="http://abc.com">an external link</a> dolor sit amet adipi scing <a href="#">a local link</a> consect etuer elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+		</p>
+		<a href="mailto:test@test.com">test@test.com</a>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: only-of-type</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	.example p { margin: 0; }
+
+	/* example 1 */
+	p:only-of-type { color: red; }
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: only-of-type
+	</h1>
+	<h2>Example 1 - Style all the elements that have no siblings of the given type</h2>
+	<div class="example">
+		<div>DIV</div>
+		<div>DIV</div>
+		<div>DIV</div>
+		<p>Paragraph 1</p>
+		<div>DIV</div>
+		<div>DIV</div>
+	</div>
+</div>
+</body>
+</html>

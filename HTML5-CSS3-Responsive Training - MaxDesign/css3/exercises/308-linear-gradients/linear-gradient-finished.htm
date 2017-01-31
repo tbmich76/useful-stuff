@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise - linear-gradient</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 1em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 120%/1.4 helvetica, arial, sans-serif;
+	}
+	
+	h2
+	{
+		clear: both;
+		margin: 0;
+	}
+	
+	div
+	{
+		width: 300px;
+		height: 200px;
+		border: 1px solid red;
+	}
+	
+	.small
+	{
+		float: left;
+		width: 130px;
+		height: 130px;
+		margin: 0 10px 10px 0;
+		padding: 10px;
+		border: 1px solid red;
+	}
+	
+	.clear { clear: left; }
+	
+	/* example1 */
+	.example0
+	{
+		background-image: -webkit-linear-gradient(yellow, white 50%, blue);
+		background-image: linear-gradient(yellow, white 50%, blue);
+	}
+	
+	.example1
+	{
+		background-image: -webkit-linear-gradient(right, yellow, white 50%, blue);
+		background-image: linear-gradient(to left, yellow, white 50%, blue);
+	}
+	
+	.example2
+	{
+		background-image: -webkit-linear-gradient(left, yellow, white 50%, blue);
+		background-image: linear-gradient(to right, yellow, white 50%, blue);
+	}
+	
+	.example3
+	{
+		background-image: -webkit-linear-gradient(bottom, yellow, white 50%, blue);
+		background-image: linear-gradient(to top, yellow, white 50%, blue);
+	}
+	
+	.example4
+	{
+		background-image: -webkit-linear-gradient(top, yellow, white 50%, blue);
+		background-image: linear-gradient(to bottom, yellow, white 50%, blue);
+	}
+	
+	.example5
+	{
+		background-image: -webkit-linear-gradient(bottom right, yellow, white 50%, blue);
+		background-image: linear-gradient(to left top, yellow, white 50%, blue);
+	}
+	
+	.example6
+	{
+		background-image: -webkit-linear-gradient(right top, yellow, white 50%, blue);
+		background-image: linear-gradient(to left bottom, yellow, white 50%, blue);
+	}
+	
+	.example7
+	{
+		background-image: -webkit-linear-gradient(left bottom, yellow, white 50%, blue);
+		background-image: linear-gradient(to right top, yellow, white 50%, blue);
+	}
+	
+	.example8
+	{
+		background-image: -webkit-linear-gradient(left top, yellow, white 50%, blue);
+		background-image: linear-gradient(to right bottom, yellow, white 50%, blue);
+	}
+	
+	.example9
+	{
+		background-image: -webkit-linear-gradient(0deg, yellow, white 50%, blue);
+		background-image: linear-gradient(0deg, yellow, white 50%, blue);
+	}
+	
+	.example10
+	{
+		background-image: -webkit-linear-gradient(45deg, yellow, white 50%, blue);
+		background-image: linear-gradient(45deg, yellow, white 50%, blue);
+	}
+	
+	.example11
+	{
+		background-image: -webkit-linear-gradient(90deg, yellow, white 50%, blue);
+		background-image: linear-gradient(90deg, yellow, white 50%, blue);
+	}
+	
+	.example12
+	{
+		background-image: -webkit-linear-gradient(135deg, yellow, white 50%, blue);
+		background-image: linear-gradient(135deg, yellow, white 50%, blue);
+	}
+	
+	.example13
+	{
+		background-image: -webkit-linear-gradient(180deg, yellow, white 50%, blue);
+		background-image: linear-gradient(180deg, yellow, white 50%, blue);
+	}
+	
+	.example14
+	{
+		background-image: -webkit-linear-gradient(225deg, yellow, white 50%, blue);
+		background-image: linear-gradient(225deg, yellow, white 50%, blue);
+	}
+	
+	.example15
+	{
+		background-image: -webkit-linear-gradient(270deg, yellow, white 50%, blue);
+		background-image: linear-gradient(270deg, yellow, white 50%, blue);
+	}
+	
+	.example16
+	{
+		background-image: -webkit-linear-gradient(315deg, yellow, white 50%, blue);
+		background-image: linear-gradient(315deg, yellow, white 50%, blue);
+	}
+	
+	/* start here */
+	.example17
+	{
+		background-image: -webkit-linear-gradient(right, yellow 5px, white 50%, blue);
+		background-image: linear-gradient(to left, yellow 5px, white 50%, blue);
+	}
+
+	.example18
+	{
+		background-image: -webkit-linear-gradient(top left, violet, indigo, blue, green, yellow, orange, red);
+		background-image: linear-gradient(to bottom right, violet, indigo, blue, green, yellow, orange, red);
+	}
+
+	.example19
+	{
+		background-image: -webkit-linear-gradient(
+			yellow 50px, 
+			blue 50px, blue 100px, 
+			orange 100px, orange 150px, 
+			lime 150px, lime 200px);
+		background-image: linear-gradient(
+			yellow 50px, 
+			blue 50px, blue 100px, 
+			orange 100px, orange 150px, 
+			lime 150px, lime 200px);
+	}
+
+	.example20
+	{
+		background-image: -webkit-repeating-linear-gradient(left, yellow, blue 50%);
+		background-image: repeating-linear-gradient(to right, yellow, blue 50%);
+	}
+
+	.example21
+	{
+		background-image: -webkit-repeating-linear-gradient(left, yellow, blue 20px);
+		background-image: repeating-linear-gradient(to right, yellow, blue 20px);
+	}
+
+	.example22
+	{
+		background-image: 
+			-webkit-linear-gradient(purple, lime),
+			-webkit-linear-gradient(lime, blue);
+		background-image: 
+			linear-gradient(purple, lime),
+			linear-gradient(lime, blue);
+		background-size: 100px 100px, 80% 80%;
+		background-repeat: no-repeat, no-repeat;
+		background-position: 0 0, right bottom;
+	}
+</style> 
+</head>
+<body>
+<h1>
+	Exercise - linear-gradient
+</h1>
+<p>
+	Create a simple gradient from left to right. The gradient should be lime to blue with a black color stop in the middle.
+</p>
+<h2 class="clear">
+	start point or angle - undefined
+</h2>
+<div class="small example0">undefined</div>
+<h2 class="clear">
+	start point or angle - two keywords
+</h2>
+<div class="small example1">to left</div>
+<div class="small example2">to right</div>
+<div class="small example3">to top</div>
+<div class="small example4">to bottom </div>
+<h2 class="clear">
+	start point or angle - three keywords
+</h2>
+<div class="small example5">to left top</div>
+<div class="small example6">to left bottom</div>
+<div class="small example7">to right top</div>
+<div class="small example8">to right bottom</div>
+<h2 class="clear">
+	start point or angle - degrees
+</h2>
+<div class="small example9">0deg</div>
+<div class="small example10">45deg</div>
+<div class="small example11">90deg</div>
+<div class="small example12">135deg</div>
+<div class="small example13">180deg</div>
+<div class="small example14">225deg</div>
+<div class="small example15">270deg</div>
+<div class="small example16">315deg</div>
+<h2>
+	Complex examples
+</h2>
+<p>
+	Experiment!
+</p>
+<div class="example17"></div>
+<p>
+	Create a rainbow
+</p>
+<div class="example18"></div>
+<p>
+	Create a stop gradient
+</p>
+<div class="example19"></div>
+<p>
+	Create a repeating pattern using 50%
+</p>
+<div class="example20"></div>
+<p>
+	Create a repeating pattern using pixels
+</p>
+<div class="example21"></div>
+<p>
+	Create a multiple linear-gradients
+</p>
+<div class="example22"></div>
+</body>
+</html>

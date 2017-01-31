@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>selector: nth-last-of-type</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	.example p { margin: 0; }
+
+	/* example 1 */
+	.example1 p:nth-last-of-type(3) { color: red; }
+	
+	/* example 2 */
+	.example2 p:nth-last-of-type(3n) { color: red; }
+	
+	/* example 3 */
+	.example3 p:nth-last-of-type(3n+1) { color: red; }
+	
+	/* example 4 */
+	.example4 p:nth-last-of-type(3n-1) { color: red; }
+	
+	/* example 5 */
+	.example5 p:nth-last-of-type(even) { color: red; }
+	
+	/* example 6 */
+	.example6 p:nth-last-of-type(odd) { color: red; }
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: nth-last-of-type
+	</h1>
+	<h2>
+		p:nth-last-of-type(3)
+	</h2>
+	<div class="example example1">
+		<p>Paragraph 1</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+		<p>Paragraph 4</p>
+		<p>Paragraph 5</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 6</p>
+		<p>Paragraph 7</p>
+		<p>Paragraph 8</p>
+		<p>Paragraph 9</p>
+		<p>Paragraph 10</p>
+	</div>
+	<h2>
+		p:nth-last-of-type(3n)
+	</h2>
+	<div class="example example2">
+		<p>Paragraph 1</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+		<p>Paragraph 4</p>
+		<p>Paragraph 5</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 6</p>
+		<p>Paragraph 7</p>
+		<p>Paragraph 8</p>
+		<p>Paragraph 9</p>
+		<p>Paragraph 10</p>
+	</div>
+	<h2>
+		p:nth-last-of-type(3n+1)
+	</h2>
+	<div class="example example3">
+		<p>Paragraph 1</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+		<p>Paragraph 4</p>
+		<p>Paragraph 5</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 6</p>
+		<p>Paragraph 7</p>
+		<p>Paragraph 8</p>
+		<p>Paragraph 9</p>
+		<p>Paragraph 10</p>
+	</div>
+	<h2>
+		p:nth-last-of-type(3n-1)
+	</h2>
+	<div class="example example4">
+		<p>Paragraph 1</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+		<p>Paragraph 4</p>
+		<p>Paragraph 5</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 6</p>
+		<p>Paragraph 7</p>
+		<p>Paragraph 8</p>
+		<p>Paragraph 9</p>
+		<p>Paragraph 10</p>
+	</div>
+	<h2>
+		p:nth-last-of-type(even)
+	</h2>
+	<div class="example example5">
+		<p>Paragraph 1</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+		<p>Paragraph 4</p>
+		<p>Paragraph 5</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 6</p>
+		<p>Paragraph 7</p>
+		<p>Paragraph 8</p>
+		<p>Paragraph 9</p>
+		<p>Paragraph 10</p>
+	</div>
+	<h2>
+		p:nth-last-of-type(odd)
+	</h2>
+	<div class="example example6">
+		<p>Paragraph 1</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 2</p>
+		<p>Paragraph 3</p>
+		<p>Paragraph 4</p>
+		<p>Paragraph 5</p>
+		<div class="div">DIV</div>
+		<p>Paragraph 6</p>
+		<p>Paragraph 7</p>
+		<p>Paragraph 8</p>
+		<p>Paragraph 9</p>
+		<p>Paragraph 10</p>
+	</div>
+</div>
+</body>
+</html>

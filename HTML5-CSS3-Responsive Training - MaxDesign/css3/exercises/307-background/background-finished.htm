@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exercise: background</title>
+<style>
+	body
+	{
+		width: 35em;
+		margin: 1em;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		font: 120%/1.4 helvetica, arial, sans-serif;
+	}
+	
+	h2 { margin: 0; }
+	p { margin: 2em 0 .5em; }
+	
+	div
+	{
+		width: 350px;
+		height: 150px;
+		margin: 0 0 1em;
+		padding: 10px;
+		border: 10px dotted red;
+	}
+	
+	/* example1 */
+	.example1
+	{
+		background-image: url(01.png);
+		background-repeat: no-repeat;
+		background-origin: border-box;
+	}
+
+	/* example2 */
+	.example2
+	{
+		background-image: url(01.png);
+		background-repeat: no-repeat;
+		background-origin: padding-box;
+	}
+
+	/* example3 */
+	.example3
+	{
+		background-image: url(01.png);
+		background-repeat: no-repeat;
+		background-origin: content-box;
+	}
+
+
+	/* example4 */
+	.example4
+	{
+		background-image: url(01.png);
+		background-repeat: no-repeat;
+		background-origin: border-box;
+		background-clip: padding-box;
+	}
+
+	/* example5 */
+	.example5
+	{
+		background-image: url(01.png);
+		background-repeat: no-repeat;
+		background-origin: border-box;
+		background-clip: content-box;
+	}
+
+	/* example6 */
+	.example6
+	{
+		background-image: url(01.png);
+		background-repeat: no-repeat;
+		background-size: 40px 40px;
+	}
+
+	/* example7 */
+	.example7
+	{
+		background-image: url(01.png);
+		background-repeat: no-repeat;
+		background-size: 40% 10%;
+	}
+
+	/* example8 */
+	.example8
+	{
+		background-image: url(04.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	/* example9 */
+	.example9
+	{
+		background-image: url(04.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	/* example10 */
+	.example10
+	{
+		background-image: url(01.png),url(02.png),url(03.png);
+		background-repeat: no-repeat, no-repeat, no-repeat;
+		background-position: 10px 10px, 50px 50px, 100px 100px;
+		background-color: yellow;
+	}
+	
+	/* example11 */
+	.example11
+	{ 
+		background: 
+			url(01.png) no-repeat 10px 10px,
+			url(02.png) no-repeat 50px 50px,
+			url(03.png) no-repeat 100px 100px yellow;
+	}
+	
+</style> 
+</head>
+<body>
+<h1>
+	Exercise: background
+</h1>
+
+<div class="example1">background-origin: border-box</div>
+<div class="example2">background-origin: padding-box</div>
+<div class="example3">background-origin: content-box</div>
+<div class="example4">background-clip: padding-box</div>
+<div class="example5">background-clip: content-box</div>
+<div class="example6">background-size: length</div>
+<div class="example7">background-size: percent</div>
+<div class="example8">background-size: contain</div>
+<div class="example9">background-size: cover</div>
+<div class="example10">multiple backgrounds - longhand</div>
+<div class="example11">multiple backgrounds - shorthand</div>
+
+</body>
+</html>
